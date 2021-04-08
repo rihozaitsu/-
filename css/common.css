@@ -1,0 +1,756 @@
+@charset "utf-8";
+* {
+  margin:0;
+  padding:0;
+}
+body{
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+	font-style: normal;
+}
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+a:link,a:visited,a:hover,a:active {
+    color:#000;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+	letter-spacing: 5px;
+	position: relative;
+    overflow: hidden;
+    height: 48px;
+}
+
+h2 {
+    font-size: 1.8rem;
+	text-align: center;
+}
+h3 {
+    font-size: 1.6rem;
+    width: 60%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1rem;
+    background: url(../images/h_rotate.png)80px 15px/100px 100px no-repeat;
+}
+
+.main-title h3, .service-item h3 {
+    font-size: 1.6rem;
+    width: 100%;
+    border-bottom: none;
+    margin-bottom: none;
+    background: none;
+}
+
+h4, h5, h6 {
+  font-size: 1.4rem;
+}
+
+.subtitle {
+	font-size: 0.8rem;
+}
+
+.red {
+    color: red;
+}
+
+
+
+.top_logo {
+    width: 14vw;    position: fixed;
+    top: 2vh;
+    left: 3vw;
+    z-index: 500000000;
+}
+
+.header-title {
+    width: 60%;
+    text-align: center;
+    padding: 8rem 0 1rem 1rem;
+    margin: 0 0 2rem 0.5rem; 
+}
+
+br.pc {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;/* 下部隙間埋め */
+}
+
+video {
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+/***** fadein *****/
+.fadein {
+	opacity : 0;
+	transform: translateY(50px);
+	transition: 1s;
+}
+/***** fadein *****/
+
+/*************** menu ****************/
+
+.menu{
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	position: fixed;
+	z-index: 30000000;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	padding: 14vh 0 0 0;
+	opacity: 0;
+}
+.menu li{
+	font-size: 4vw;
+	padding: 1.2vh 0 1.2vh 0;
+	margin: 2.4vh 6%;
+}
+.menu li span{
+	margin: auto 15px auto auto;
+	color: #333;
+	font-size:12px;
+}
+.menu a{
+	color: #000;
+	text-decoration: none;
+}
+/*********** ボタンの見た目 ************/
+.btn_wrap{
+	mix-blend-mode: exclusion;
+	position: fixed;
+	right: 3vw;
+	margin:2vh 0 4vh auto;
+	width: 18vw;
+	z-index: 10000000000;
+}
+.btn{
+	position: absolute;
+	width: 18vw;
+	height: 18vw;
+}
+.btn2{
+	transform: scale(0.7);
+	position: absolute;
+	width: 18vw;
+	height: 18vw;
+	opacity: 0;
+}
+
+/* ボタン切り替えアニメーション */
+.btnout{
+	animation: btnout 0.5s forwards;
+}
+@keyframes btnout{
+	100%{
+		opacity: 0;
+		transform: scale(0.1);
+	}
+}
+.btnchange{
+	animation: btnchange 0.5s forwards;
+}
+@keyframes btnchange{
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/*メニュー展開時のアニメーション*/
+.over{
+	display: block;
+	animation: overmenu 0.4s forwards;
+}
+@keyframes overmenu{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+/******************* header *****************/
+
+.header {
+    position: relative;
+    overflow: hidden;
+}
+
+.header_h1{
+    width: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    transition: 1s;
+    position:absolute;
+    top: 50px;
+    animation:h1_up 1s forwards;
+}
+@keyframes h1_up{
+    0%{top: 50px;}
+    100%{top: 0px;}
+}
+
+.h1_up{
+    top: 0;
+}
+
+.header_p {
+    position: relative;
+    overflow: hidden;
+    height: 48px;
+}
+
+.header_p span{
+    width: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    transition: 1s;
+    position:absolute;
+    top: 50px;
+    animation:h1_up 1s forwards;
+}
+
+.header_border {
+    border-bottom: 1px solid #000; 
+	animation: borderin 1s forwards;
+}
+
+@keyframes borderin {
+	0% { 
+        opacity: 0; 
+        transform: translateX(400px)
+    }
+	100%{ 
+        opacity: 1; 
+        transform: translateX(0px)
+    }
+}
+
+.txt {
+    font-size: 10rem;
+    margin-top: 40px;
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 1000000;
+    animation: txt_up 1s forwards;
+}
+
+@keyframes txt_up {
+    0%{
+        opacity: 0;
+        top: -100px;
+    }
+
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+        top: 18%;
+    }
+}
+
+/******************* top-contents *****************/
+
+.header .contents-top{
+    position: relative;
+}
+
+.black_back, .gray_back {
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    height: 280px;
+    width: 100vw;
+    left: -130vw;
+}
+.black_back {
+    background-color: rgba(180,180,180,0.5);
+    animation: slide_video 1.2s forwards;
+}
+.gray_back {
+    background-color: rgba(51,51,51,0.5);
+    animation: slide_video 1.2s forwards;
+    animation-delay: 0.3s;
+}
+.video_wrap{
+	position: relative;
+    z-index: 90;
+    top: 0;
+    width: 100vw;
+    height: 280px;
+    overflow: hidden;
+    left: -100vw;
+    transition: 1s;
+    animation: slide_video 1.2s forwards;
+    animation-delay: 0.5s;
+}
+@keyframes slide_video{
+    100%{left: 0;}
+}
+
+/******************* main *****************/
+
+.main .top {
+    border-bottom: 3px solid #000;
+    background-color: #fff;
+}
+
+.main .top .text {
+    width: 80%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.main .top .text h2 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.main .top .text p {
+    font-size: 1.2rem;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+/************ 背景動画 ***********/
+
+/******** 背景アニメーション *******/
+
+.rotate-area { 
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+}
+
+.hexagon {
+    position: absolute;
+    bottom: -200px;
+    animation: rotate 16s infinite;
+}
+
+@keyframes rotate {
+    0%{
+    transform: translateY(0) rotate(0deg);
+    }
+    100%{
+    transform: translateY(-1200px) rotate(240deg);
+    }
+}
+.hexagon::before {
+    display: block;
+    padding-top: 173.205080757%;  /* 3 / √3 * 100 */
+    content: '';
+}
+.hexagon__inner-1, .hexagon__inner-2, .hexagon__inner-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hexagon__inner-2 {
+    transform: rotate(120deg);
+}
+.hexagon__inner-3 {
+    transform: rotate(-120deg);
+}
+.hexagon__inner-1::before, .hexagon__inner-1::after,
+.hexagon__inner-2::before, .hexagon__inner-2::after,
+.hexagon__inner-3::before, .hexagon__inner-3::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.hexagon__inner-1::before, .hexagon__inner-2::before, .hexagon__inner-3::before {
+    top: 0;
+}
+.hexagon__inner-1::after, .hexagon__inner-2::after, .hexagon__inner-3::after {
+    bottom: 0;
+}
+
+.rotate-area .hexagon:nth-child(1) {
+    left: 10%;
+    width: 80px;
+    animation-delay: 0s; /** 開始時間 **/
+}
+.rotate-area .hexagon:nth-child(2) {
+    left: 20%;
+    width: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s; /** 終わるまでの時間 **/
+}
+.rotate-area .hexagon:nth-child(3) {
+    left: 30%;
+    width: 75px;
+    animation-delay: 4s;
+}
+.rotate-area .hexagon:nth-child(4) {
+    left: 40%;
+    width: 40px;
+    animation-delay: 2s;
+    animation-duration: 18s;
+}
+.rotate-area .hexagon:nth-child(5) {
+    left: 50%;
+    width: 30px;
+    animation-delay: 1s;
+}
+.rotate-area .hexagon:nth-child(6) {
+    left: 60%;
+    width: 110px;
+    animation-delay: 3s;
+}
+.rotate-area .hexagon:nth-child(7) {
+    left: 70%;
+    width: 45px;
+    animation-delay: 15s;
+}
+.rotate-area .hexagon:nth-child(8) {
+    left: 80%;
+    width: 55px;
+    animation-delay: 4s;
+}
+.rotate-area .hexagon:nth-child(9) {
+    left: 90%;
+    width: 25px;
+    animation-delay: 7s;
+}
+.rotate-area .hexagon:nth-child(10) {
+    left: 95%;
+    width: 90px;
+    animation-delay: 0s;
+}
+.rotate-area .hexagon:nth-child(11) {
+    left: 15%;
+    width: 80px;
+    animation-delay: 5s;
+}
+.rotate-area .hexagon:nth-child(12) {
+    left: 25%;
+    width: 60px;
+    animation-delay: 13s;
+}
+.rotate-area .hexagon:nth-child(13) {
+    left: 35%;
+    width: 40px;
+    animation-delay: 10s;
+}
+.rotate-area .hexagon:nth-child(14) {
+    left: 45%;
+    width: 90px;
+    animation-delay: 11s;
+}
+.rotate-area .hexagon:nth-child(15) {
+    left: 55%;
+    width: 70px;
+    animation-delay: 7s;
+}
+.rotate-area .hexagon:nth-child(16) {
+    left: 65%;
+    width: 20px;
+    animation-delay: 9s;
+}
+.rotate-area .hexagon:nth-child(17) {
+    left: 75%;
+    width: 50px;
+    animation-delay: 13s;
+}
+.rotate-area .hexagon:nth-child(18) {
+    left: 85%;
+    width: 80px;
+    animation-delay: 6s;
+}
+
+
+
+/******************* next-contents *****************/
+
+.next-contents .bg-filter {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.next-contents .text {
+    position:absolute;
+    top: 50%;
+    right: 10%;
+    color: #fff;
+}
+
+.next-contents .text p {
+    padding: 0.3rem 0 0.3rem;
+    font-size: 0.8rem;
+}
+
+.next {
+    display: block;
+    width: 100px;
+    height: 2px;
+    font-size: 0.8rem;
+    background-color: #fff;
+    position: relative;
+    transform: scale(0, 1);
+    transform-origin: top left;
+    animation: arrow01 3s ease-in-out infinite forwards;
+}
+@keyframes arrow01 {
+    0% { transform: scale(0, 1); }
+    10% { transform: scale(0, 1); }
+    20% { transform: scale(1, 1); }
+    50% { transform: scale(1, 1); opacity: 1;}
+    90% { transform: scale(1, 1); opacity: 0; }
+    100% { transform: scale(1, 1); opacity: 0; }
+}
+.next::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 15px;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg) scale(1, 0);
+    transform-origin: right bottom;
+    position: absolute;
+    bottom: 2px;
+    right: 1px;
+    animation: arrow02 3s ease-in-out infinite forwards;
+}
+@keyframes arrow02 {
+    0% { transform: rotate(-45deg) scale(1, 0); }
+    20% { transform: rotate(-45deg) scale(1, 0); }
+    40% { transform: rotate(-45deg) scale(1, 1); }
+    85% { transform: rotate(-45deg) scale(1, 1); opacity: 1;}
+    90% { transform: rotate(-45deg) scale(1, 1); opacity: 0; }
+    100% { transform: rotate(-45deg) scale(1, 1); opacity: 0; }
+}
+
+
+/******************* footer *****************/
+
+.footer a:link,
+.footer a:visited,
+.footer a:hover,
+.footer a:active {
+    color:#fff;
+}
+
+.contact-back {
+    width: 100%;
+    background-color: #313131;
+}
+.blog-back {
+    width: 100%;
+    background-color: #505050;
+}
+.contact, .blog {
+    padding: 3rem;
+    color: #fff;
+}
+.globalfooter {
+	background-color: #000;
+}
+
+.footer{
+	z-index: 30;
+	position: relative;
+}
+.footer-menu ul li{
+    width: 80%;
+    height: 4rem;
+    line-height: 3rem;
+    padding-left: 2rem;
+}
+
+.footer-menu ul {
+    padding: 2rem  0;
+    border-bottom: 1px solid #333333;
+    border-top: 1px solid #333333;
+} 
+
+.footer-menu ul li a{
+    color: #fff;
+    font-size: 1.0rem;
+}
+
+.footer-menu ul li a span {
+    font-size: 0.8rem; 
+    color: #333333;
+    margin-right: 1rem;
+}
+
+.copy-right {
+    background-color: #000;
+    padding: 2rem 0 5rem 3rem;
+    font-size: 0.8rem;
+    color: #333333;
+}
+.footer nav{
+	width: 100%;
+}
+
+@media screen and (max-width:767px) {
+
+}
+@media screen and (min-width:768px){
+
+h1 {
+	font-size: 3rem;
+    height: 60px;
+}
+
+h2{
+	font-size: 2.5rem;
+}
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5,
+h6 {
+	font-size: 1.8rem;
+}
+	​
+p,a,th,td,li {
+	font-size: 1.3rem;
+}
+
+.subtitle {
+	font-size: 1.2rem;
+}
+
+
+.btn_wrap{
+	width: 6rem;
+	margin: 6vh 5vw 4vh auto;
+}
+
+.btn{
+	width: 6rem;
+	height: 6rem;
+}
+.btn2{
+	width: 6rem;
+	height: 6rem;
+}
+.menu ul{
+	position: relative;
+	width: 65%;
+	left: 35%
+}
+
+.menu .pc video{
+	top: 0;
+	right: 55%;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+.menu li{
+	margin: 2.4vh 10%;
+	position: relative;
+	z-index: 100000;
+	font-size: 24px;
+}
+
+.contact-back, .blog-back {
+	width: 50%;
+	float: left;
+}
+
+.footer-menu ul {
+	display: flex;
+	padding: 4rem 0 6rem; 
+	border-bottom: none;
+} 
+
+br.pc {
+	display: none;
+}
+
+/***************** header ******************/
+
+.header-title {
+    width: 40%;
+    margin-bottom: 7rem; 
+}
+
+/***************** main ******************/
+
+.contents-back {
+    height: 1024px;
+}
+
+.main .top .text {
+    width: 60%;
+    padding: 7rem 2rem;
+}
+
+.main .top .text p{
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+
+
+/************* next-contents *************/
+
+.next-contents {
+    height: 400px;
+}
+
+.next-contents .bg-filter {
+    height: 400px;
+}
+
+.next-contents .text p {
+    padding: 1rem 0 0.5rem;
+    font-size: 1rem;
+}
+
+/***************** footer ******************/
+
+.contact-back, .blog-back {
+    width: 50%;
+    float: left;
+}
+
+.contact, .blog {
+    padding: 4rem;
+}
+
+.footer-menu ul {
+    display: flex;
+    padding: 4rem 0 6rem; 
+    border-bottom: none;
+} 
+
+
+}

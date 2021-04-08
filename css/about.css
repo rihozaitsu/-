@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/***************** main ******************/
+/****** comcept ******/
+
+.concept,
+.company-profile,
+.corporate-philosophy {
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 5rem 5%;
+}
+
+.concept .case {
+    padding: 1.5rem 0;
+}
+
+/****** corporate ******/
+
+.corporate-philosophy .text  h4{
+    padding-top: 1rem;
+}
+
+/****** company ******/
+
+.kaisha {
+    width: 100%;
+}
+
+.kaisha th {
+    width: 20%;
+    text-align: left;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.kaisha td {
+    width: 85%;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.kaisha td a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.map {
+    width: 30px;
+    padding-left: 10px;
+}
+
+/****** next-contents ******/
+
+.next-contents {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/wedding.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/************************ レスポンシブ **********************/
+
+@media screen and (min-width:768px) {
+
+
+/***************** comcept ****************/
+
+.concept, .company-profile, .corporate-philosophy {
+    width: 60%;
+} 
+
+
+
+}
+
+@media screen and (min-width:1024px) {
+
+}

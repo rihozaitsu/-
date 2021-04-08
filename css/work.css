@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+.works video {
+    width: 100%;
+    position: static;
+}
+
+/******** 技術的な変更 *******/
+
+.border-tb {
+    border-top: 3px dotted #B1AEAE;
+    border-bottom: 3px dotted #B1AEAE;
+}
+
+.shooting-flow .subtitle, 
+.price-schedule .subtitle {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/***************** main ******************/
+
+/***************** works ******************/
+
+.works {
+    padding: 100px 0;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.works .category {
+    width: 100%;
+}
+
+.works .category .item {
+    position: relative;
+}
+
+.works .category .item .images {
+    width: 100%; 
+    margin: 3rem 0 8rem;
+    position:relative;
+}
+
+.works .category .item .images img { 
+    height: 200px;
+    object-fit: cover;/* リサイズ */
+}
+
+.works .category .item .main-title {
+    width: 100%;
+    padding: 1rem;
+    text-align: right;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    box-sizing: border-box;
+}
+
+.arrow{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.arrow:hover {
+    transform: scale(1.2, 1.2);
+    transition: transform 0.5s ease;
+    color: red;
+}
+
+.arrow::before {
+    content: "";
+    width: 50px;
+    position: absolute;
+    bottom: 15px;
+    left: -12px;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-75deg);
+}
+
+.arrow::after {
+    content: "";
+    width: 50px;
+    position: absolute;
+    bottom: 15px;
+    right: -12px;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-75deg);
+}
+
+.arrow p{
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/***************** category-contents ******************/
+
+
+.works .contents .product {
+    margin: 0 auto;
+    padding: 1rem 1rem 4rem;
+}
+/************** toggle ************/
+#toggle1, #toggle2, #toggle3 {
+    display: none;
+}
+
+/************** toggle ************/
+.works .contents .product .title {
+    padding: 1rem 0 2rem;
+}
+
+.works .contents .product h4 {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #000;
+}
+
+.works .contents .product .text h5 {
+    padding: 2rem 0 1rem;
+} 
+
+
+/****** next-contents ******/
+
+.next-contents {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/color.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+@media screen and (min-width:768px) {
+
+/***************** main ******************/
+
+.main .top .text {
+    padding: 7rem 2rem;
+}
+
+.main .top .text p{
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+
+.works .category .item .images { 
+    padding: 5rem 0;
+}
+
+.works .category .item .images img { 
+    height: 400px;
+}
+
+.works .category .item .main-title {
+    padding: 3rem 2rem;
+    text-align: center;
+    top: 70%;
+}
+
+.arrow p{
+    margin-top: 3rem;
+}
+
+.works .contents .product {
+    padding: 4rem;
+}
+
+.works .contents .product .text {
+    padding: 0 2rem;
+} 
+
+
+}
+
+@media screen and (min-width:1024px) {
+
+.works .category .top .images img { 
+    height: 500px;
+}
+    
+
+
+
+}

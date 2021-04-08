@@ -1,0 +1,43 @@
+@charset "utf-8";
+* {
+  margin:0;
+  padding:0;
+}
+
+.contact_introduction p{
+    width: 80%;
+    margin: 0 10%;
+    line-height: 28px;
+}
+
+
+.form_wrap{
+  width: 80%;
+  margin: 32px auto 0 auto;
+}
+input,textarea{
+  box-sizing: border-box;
+  width: 100%;
+}
+label{
+  display: block;
+  margin: 8px auto;
+}
+
+#userName,#email{
+  height: 32px;
+}
+textarea{
+  height: 100px;
+}
+input:last-of-type{
+  height: 60px;
+  margin: 32px auto;
+}
+@media screen and (max-width:320px){
+}
+
+@media screen and (max-width:900px) {
+}
+@media screen and (min-width:901px) {
+}

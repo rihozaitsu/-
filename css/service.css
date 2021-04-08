@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+.shooting-flow .subtitle, 
+.price-schedule .subtitle {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/***************** main ******************/
+
+/***************** pickup ******************/
+
+.pickup {
+    padding: 3rem 0;
+}
+
+.pickup .contents {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    position: relative;
+}
+.pickup .contents .h2border {
+    width: 20%;
+    border-top: solid 1px #333;
+    margin: 9px 10px 0;
+    display: inline-block;
+    height: 5px;
+}
+
+.pickup .contents-item {
+    padding-top: 2rem; 
+    position: relative;
+}
+
+.pickup .contents-item .images {
+    width: 100%; 
+    height: 300px;
+    margin-bottom: 1rem;
+    position:relative;
+}
+
+.pickup .contents-item .images img { 
+    height: 300px;
+    padding-bottom: 1rem;
+    object-fit: cover;/* リサイズ */
+}
+
+.saiyou-back {
+    background-image: url(../images/saiyou.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.youtube-back {
+    background-image: url(../images/youtube.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.cook-back {
+    background-image: url(../images/cook.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wedding-back {
+    background-image: url(../images/wedding.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.live-back {
+    background-image: url(../images/live.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.move-back {
+    background-image: url(../images/live.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gray-filter {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.gray-filter button {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid #fff;
+    background-color:rgba(0, 0, 0, 0.2);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pickup .contents .text {
+    width: 100%;
+    text-align: right;
+    background-color: rgba(255, 255, 255,0.8);
+    position: absolute;
+    bottom: 0;
+}
+
+.pickup .contents .text h3 {
+    width: 85%;
+    margin: 0 5% 1rem 10%;
+    border-bottom: 1px solid #000;
+}
+
+.pickup .contents .text .subtitle {
+    margin-right: 5%;
+}
+
+.arrow-next {
+    display: block;
+    margin-top: 2px; 
+    height: 2px;
+    font-size: 0.8rem;
+    background-color: #fff;
+    position: relative;
+    transform: scale(0, 1);
+    transform-origin: top left;
+    animation: arrow01 3s ease-in-out infinite forwards;
+}
+
+.arrow-next::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 15px;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg) scale(1, 0);
+    transform-origin: right bottom;
+    position: absolute;
+    bottom: 2px;
+    right: 1px;
+    animation: arrow02 3s ease-in-out infinite forwards;
+}
+
+.service-list {
+    padding: 1rem 1rem 2rem;
+    margin-top: 3rem;
+    color: #000;
+}
+
+.service-list .title {
+    text-align: center;
+    padding: 1rem 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
+
+.service-list ul li {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+/***************** shooting flow ******************/
+
+.shooting-flow {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+.shooting-flow img {
+    width: 100%;
+}
+
+.shooting-flow .text, 
+.price-schedule .text {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/***************** price & schedule ******************/
+
+.price-schedule {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+.price-schedule img {
+    width: 80%;
+    padding: 0 10%;
+}
+
+
+/****** next-contents ******/
+
+.next-contents {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/about-concept.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+@media screen and (min-width:768px) {
+        
+
+/***************** main ******************/
+
+.contents-top .text {
+    padding: 7rem 2rem;
+}
+
+.contents-top .text p{
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+
+/***************** pickup ******************/
+
+.pickup {
+    padding: 7rem 0;
+}
+
+.pickup .flex {
+    display: flex;
+}
+
+.pickup .contents {
+    width: 80%;
+}
+
+.pickup .contents .images { 
+    height: 400px;
+}
+
+.pickup .contents-item {
+    width: 46%;
+    margin: 0 2%;
+}
+
+.pickup .contents-item .text {
+    margin-bottom: 1rem;
+}
+
+.pickup .contents .service-list {
+    width: 60%;
+    margin: 4rem auto 0;
+}
+
+/*************** shooting ****************/
+
+
+.shooting-flow {
+    padding-top: 7rem;
+}
+
+.price-schedule {
+    padding: 7rem 0;
+}
+
+
+
+}

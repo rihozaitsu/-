@@ -1,0 +1,432 @@
+@charset "utf-8";
+
+
+/************* main ***********/
+
+/***** page_top *****/
+
+.page_top {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+.page_top .text {
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.page_top .text h1{
+	height: 80px;
+	opacity: 0;
+	animation: contents_up 1s forwards 0.5s;
+	margin: 8px 0;
+	letter-spacing: 5px;
+	font-size: 24px;
+}
+
+.page_top .text p{
+	opacity: 0;
+	animation: contents_up 1s forwards 0.5s;
+}
+
+/****** arrow animation ******/
+
+.arrow{
+	opacity: 0;
+	animation: contents_up 1s forwards 0.5s;
+}
+.arrow_wrap{
+	width: 20%;
+	text-align: center;
+	position: absolute;
+	bottom: 40px;
+	left: 40%;
+	transform: translate(0%, -50%);
+	animation: arrow_shake 1.4s infinite 1.5s;
+}
+
+@keyframes contents_up{
+	0%{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+@keyframes arrow_shake{
+	0%{
+		transform:translateY(0);
+	}
+	50%{
+		transform:translateY(20px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+/****** rotate animation ******/
+
+.head_rotate1 {
+	width: 80px;
+	position: absolute;
+	top: 20%;
+	opacity: 0;
+	animation: img_rotate1 1s forwards .1s;
+}
+
+.head_rotate2 {
+	width: 150px;
+	position: absolute;
+	top: 20%;
+	opacity: 0;
+	animation: img_rotate2 1s forwards .1s;
+
+}
+
+.head_rotate3 {
+	width: 80px;
+	position: absolute;
+	bottom: 25%;
+	opacity: 0;
+	animation: img_rotate3 1s forwards .1s;
+}
+
+.head_rotate4 {
+	width: 150px;
+	position: absolute;
+	bottom: 25%;
+	opacity: 0;
+	animation: img_rotate4 1s forwards .1s;
+}
+
+@keyframes img_rotate1 {
+	0%{
+		left: 0%;
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	100%{
+		left: 5%;
+		opacity: 1;
+		transform: rotate(150deg);
+	}
+}
+
+@keyframes img_rotate2 {
+	0%{
+		left: 0%;
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	100%{
+		left: 10%;
+		opacity: 1;
+		transform: rotate(150deg);
+	}
+}
+
+@keyframes img_rotate3 {
+	0%{
+		right: 0%;
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	100%{
+		right: 30%;
+		opacity: 1;
+		transform: rotate(150deg);
+	}
+}
+
+@keyframes img_rotate4 {
+	0%{
+		right: 0%;
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	100%{
+		right: 5%;
+		opacity: 1;
+		transform: rotate(150deg);
+	}
+}
+
+
+
+/***** page_contents *****/
+
+.top_contents {
+	width: 80%;
+	max-width: 1000px;
+	margin: 3rem auto;
+	padding: 2rem 1rem;
+	border: 2px solid #000;
+	border-radius: 10px;
+	background-color: rgba(128, 128, 128, 0.3);
+}
+
+.top_contents h2 {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.top_contents p {
+	width: 80%;
+	padding: 0 10%;
+}
+
+/***** main_contents *****/
+
+.main_contents .item{
+	width: 80%;
+	padding: 4rem 10% 2rem;
+	margin: 5rem 0;
+	background-color: #000;
+	color: #fff;
+	position: relative;
+}
+
+.main_contents .item:nth-child(2){
+	background-color: rgba(255, 255,255 ,0);
+	color: #000;
+}
+
+.main_contents .item:nth-child(odd)::before{
+	content: '';
+	position: absolute;
+	left:0;
+	top: 0;
+	/*四角形を傾けます*/
+	transform: skewY(-5deg);
+	transform-origin: top left;
+	z-index: -1;
+	width:100%;
+	height:100%;
+	background: #000;
+}
+
+.main_contents .item:nth-child(odd)::after{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10%;
+	/*四角形を傾けます*/
+	transform: skewY(-5deg);
+	transform-origin: bottom left;
+	z-index: -1;
+	width:100%;
+	height:100%;
+	background: #000;
+}
+
+.main_contents .item .images {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.main_contents .item img {
+	width: 100%;
+	text-align: center;
+	box-shadow: 10px 10px  #f0f0f0;
+}
+
+.main_contents .item:nth-child(2) img{
+	box-shadow: 10px 10px  #000;
+}
+
+
+.main_contents .item .text {
+	padding: 2rem 1rem;
+}
+
+.main_contents .item .text h3 {
+	padding: 1rem 0;
+	text-align: center;
+}
+
+
+.main_bottom {
+	width: 100%;
+	height: 400px;
+	position:relative;
+	background: -moz-linear-gradient(top,#fff , #F7F7F7);
+    background: -webkit-linear-gradient(top, #fff , #F7F7F7);
+	background: linear-gradient(to bottom,#fff , #F7F7F7);
+}
+
+.main_bottom .text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/****** next-contents ******/
+
+.next-contents {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/youtube.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+@media screen and (min-width:768px) {
+
+
+/************* main ***********/
+
+
+.top_back {
+	background-image: url(../images/backpc.png);
+}
+
+/****** rotate animation ******/
+
+.head_rotate1 {
+	width: 100px;
+}
+
+.head_rotate2 {
+	width: 200px;
+}
+
+.head_rotate3 {
+	width: 100px;
+}
+
+.head_rotate4 {
+	width: 200px;
+
+}
+
+@keyframes img_rotate1 {
+	0%{
+		left: 0%;
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	100%{
+		left: 23%;
+		opacity: 1;
+		transform: rotate(150deg);
+	}
+}
+
+
+@keyframes img_rotate2 {
+	0%{
+		left: 0%;
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	100%{
+		left: 25%;
+		opacity: 1;
+		transform: rotate(150deg);
+	}
+}
+
+@keyframes img_rotate3 {
+	0%{
+		right: 0%;
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	100%{
+		right: 22%;
+		opacity: 1;
+		transform: rotate(150deg);
+	}
+}
+
+@keyframes img_rotate4 {
+	0%{
+		right: 0%;
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	100%{
+		right: 25%;
+		opacity: 1;
+		transform: rotate(150deg);
+	}
+}
+
+
+.top_contents {
+	width: 50%;
+	margin: 7rem auto;
+	padding: 5rem 1rem;
+
+}
+
+/***** main_contents *****/
+
+.main_contents .item{
+	width: 80%;
+	padding: 12rem 10%;
+	margin: 10rem auto;
+}
+
+.main_contents .item:nth-child(odd)::after{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -15%;
+	/*四角形を傾けます*/
+	transform: skewY(-5deg);
+	transform-origin: bottom left;
+	z-index: -1;
+	width:100%;
+	height:100%;
+	background: #000;
+}
+
+.main_contents .item img {
+
+	box-shadow: 20px 20px  #f0f0f0;
+}
+
+.main_contents .item:nth-child(2) img{
+	box-shadow: 20px 20px  #000;
+}
+
+.main_contents .item:nth-child(2){
+	color: #fff;
+}
+
+.main_contents .item .text {
+	width: 40%;
+	max-width: 500px;
+	position: absolute;
+	bottom: 15%;
+	right: 10%;
+	padding: 3rem 2rem;
+	background-color: rgba(128, 128, 128, 0.8);
+}
+
+.main_contents .item .text h3 {
+	padding: 1rem 0;
+}
+
+
+
+}
+
+@media screen and (min-width:1024px) {
+
+}
