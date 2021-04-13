@@ -146,6 +146,7 @@ video {
 	position: absolute;
 	width: 18vw;
 	height: 18vw;
+    z-index: 10000000000;
 }
 .btn2{
 	transform: scale(0.7);
@@ -153,6 +154,7 @@ video {
 	width: 18vw;
 	height: 18vw;
 	opacity: 0;
+    z-index: 10000000000;
 }
 
 /* ボタン切り替えアニメーション */
