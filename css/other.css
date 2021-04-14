@@ -1,0 +1,108 @@
+
+    #circle{
+      display: none;
+    }
+
+    body{
+      background-color: snow;
+    }
+    .footer_black{
+      display: none;
+    }
+    .top_video{
+      width: 60vw;
+      height: auto;
+      transform: translate(0,0);
+      right: 10vw;
+      left: auto;
+      bottom: -10vh;
+    }
+    .homebtn_wrap{
+      width: 92px;
+      height: 92px;
+      right: 10vw;
+    }
+    .logo_wrap{
+      width: 9vw;
+      left: 10vw;
+    }
+    .load_logo{
+      width: 15%;
+    }
+    .loadimg_creative{
+      width: 39%;
+      left: 19vw;
+    }
+    .loadimg_world{
+      width: 9%;
+    }
+    .loadimg_smile{
+      width: 39%;
+      left: 19vw;
+      top: 30vh;
+    }
+    .top img{
+      width: auto;
+      z-index: 10;
+    }
+    .top_creative{
+      height: 16vh;
+      top: 20vh;
+      animation: top_img 2s 4.3s forwards;
+    }
+    .top_for{
+      height: 15vh;
+      top: 35vh;
+      animation: top_img 2s 4.4s forwards;
+    }
+    .top_smile{
+      height:27vh;
+      top: 42vh;
+      animation: top_img 2s 4.5s forwards;
+    }
+    @keyframes top_img {
+      0%{left: -100%;opacity: 0;}
+      5%{opacity: 1;}
+      50%{left: 10%;opacity: 1;transform: scale(1);}
+      90%{transform: scale(0.9);}
+      100%{left: 10%;transform: scale(0.9);}
+    }
+    .main{
+      margin: 100vh 0 0 0;
+      padding: 20vh 0 0 0;
+    }
+    .for{
+       width: 35%;
+        margin: 20px 0 0 8px;
+    }
+    .smile{
+      width: 90%;
+    }
+    .appealtext_wrap {
+      margin: 0 25%
+    }
+    .about_p{
+      width: 50%;
+      margin: 64px 25% 0 25%;
+      font-size: 24px;
+    }
+    .about_a{
+      width: 100px;
+      height: 100px;
+    }
+    .about_a span{
+      font-size: 18px;
+    }
+    .partner_list{
+      padding: 64px 15%;
+    }
+    .partner_list li{
+      width: calc(100%/3);
+    }
+    .list_img{
+      width: 60%;
+    }
+    .home_globalfooter{
+      padding: 0 15%;
+    }
+  

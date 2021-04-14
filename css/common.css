@@ -65,9 +65,10 @@ h4, h5, h6 {
 
 
 .top_logo {
-    width: 14vw;    position: fixed;
-    top: 2vh;
-    left: 3vw;
+    width: 26vw;    
+    position: fixed;
+    top: 3vh;
+    left: 5vw;
     z-index: 500000000;
 }
 
@@ -118,6 +119,9 @@ video {
 	background-color: #fff;
 	padding: 14vh 0 0 0;
 	opacity: 0;
+}
+.menu ul{
+    margin: 10vh 0 0 10vw;
 }
 .menu li{
 	font-size: 4vw;
@@ -755,4 +759,32 @@ br.pc {
 } 
 
 
+}
+
+
+@media screen and (min-width:899px) {
+.menu ul{
+    margin: 10vh 0 0 30vw;
+    left: 0;
+}
+.pcmenu_back,
+.pcmenu_over{
+    position: fixed;
+    top: 0;
+    height: 100vw;
+}
+.pcmenu_back{
+    right: 0;
+    background-color: #fff;
+    width: 70vw;
+}
+.pcmenu_over{
+    left: 0;
+    width: 30vw;
+    mix-blend-mode: screen;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.heart_pc{
+    top: -10vh;
+}
 }
