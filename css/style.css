@@ -90,7 +90,13 @@ p{
   top: 3vh;
   left: 5vw;
 }
-
+.home_logo {
+  width: 26vw;    
+  position: fixed;
+  top: 3vh;
+  left: 5vw;
+  z-index: 500000000;
+}
 .homebtn_wrap{
     position: fixed;
     top: 2.5vh;

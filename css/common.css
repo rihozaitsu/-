@@ -64,11 +64,12 @@ h4, h5, h6 {
 
 
 
+
 .top_logo {
-    width: 26vw;    
+    width: 14vw;    
     position: fixed;
-    top: 3vh;
-    left: 5vw;
+    top: 2vh;
+    left: 3vw;
     z-index: 500000000;
 }
 

@@ -3,20 +3,21 @@ window.addEventListener('pageshow',()=>{
     $('.red_wrap').css('display','block');
    $('.about_a').removeClass('btn_scale');
    $('.about_a span').removeClass('home_btn2');
+   $('.red_wrap').css('animation-delay','1s');
   }
 });
+
 window.onload = function(){
-  $('.red_wrap').css('animation-delay','0');
   $('body').css('overflow','hidden');
   setTimeout(function(){
     $('body').css('overflow','auto');
-},5900);
+},4000);
 
 setTimeout(function(){
   $('.load_wrap,.red_wrap').css('display','none');
 },5900);
 }
- /* ピッチインピッチアウトによる拡大縮小を禁止 */
+ /* ピッチインピッチアウトによる拡z大縮小を禁止 */
  document.documentElement.addEventListener('touchstart', function (e) {
   if (e.touches.length >= 2) {e.preventDefault();}
   }, {passive: false});
