@@ -1,23 +1,16 @@
 @charset "utf-8";
 
-.shooting-flow .subtitle, 
-.price-schedule .subtitle {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 1rem;
+h3 {
+    background: none;
 }
 
 /***************** main ******************/
-
-/***************** pickup ******************/
 
 .pickup {
     padding: 3rem 0;
 }
 
 .pickup .contents {
-    width: 90%;
     margin: 0 auto;
     padding: 3rem 0;
     position: relative;
@@ -30,126 +23,139 @@
     height: 5px;
 }
 
-.pickup .contents-item {
-    padding-top: 2rem; 
+.contents-top {
+    position: relative;
+    margin: 200px 0 0;
+}
+
+.contents-top .images{
+    width: 90%;
+    height: 200px;
+    background-image: url(../images/about-concept.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -170px;
+    right: 0;
+    box-shadow: 6px 6px 6px rgb(0, 0, 0);
+}
+
+.photo .contents-top .images {
+    width: 90%;
+    height: 200px;
+    background-image: url(../images/cook.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -170px;
+    left: 0;
+    box-shadow: 6px 6px 6px rgb(0, 0, 0);
+}
+
+.contents-top .textbox {
+    width: 90%;
+    padding: 40px 0 40px 20px;
+    background-color: #B81B26;
+    color: white;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.photo .contents-top .textbox {
+    padding: 40px 20px 40px 0px;
+
+}
+
+.photo .contents-top .textbox {
+    float: right;
+}
+
+.contents-top .textbox h2{
+    text-align: start;
     position: relative;
 }
 
-.pickup .contents-item .images {
-    width: 100%; 
-    height: 300px;
-    margin-bottom: 1rem;
-    position:relative;
+.photo .contents-top .textbox h2 {
+    text-align: right;
 }
 
-.pickup .contents-item .images img { 
-    height: 300px;
-    padding-bottom: 1rem;
-    object-fit: cover;/* リサイズ */
+.contents-top .textbox p{
+    position: relative;
+}
+
+.photo .contents-top .textbox p{
+    text-align: right;
+}
+
+.flex {
+    margin: 0 auto;
+    max-width: 768px;
+    
+}
+
+.flex .contents-item {
+    width: 48%;
+    padding: 1rem 1%;
+    position: relative;
+}
+
+.flex .contents-item .images {
+    width: 100%; 
+    height: 150px;
+    position:relative;
+    background-size: cover;
+    background-position: center;
 }
 
 .saiyou-back {
     background-image: url(../images/saiyou.jpg);
-    background-size: cover;
-    background-position: center;
 }
-
 .youtube-back {
     background-image: url(../images/youtube.png);
-    background-size: cover;
-    background-position: center;
+}
+.event-back {
+    background-image: url(../images/youtube.png);
+}
+.zoom-back {
+    background-image: url(../images/youtube.png);
+}
+.live-back {
+    background-image: url(../images/youtube.png);
+}
+.sns-back {
+    background-image: url(../images/youtube.png);
 }
 
 .cook-back {
     background-image: url(../images/cook.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .wedding-back {
     background-image: url(../images/wedding.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.live-back {
-    background-image: url(../images/live.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .move-back {
     background-image: url(../images/live.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
-.gray-filter {
-    width: 100%;
-    height: 100%;
-    background-color:rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.gray-filter button {
-    width: 50%;
-    padding: 1rem;
-    border: 1px solid #fff;
-    background-color:rgba(0, 0, 0, 0.2);
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.pickup .contents .text {
+.flex .contents-item .text {
     width: 100%;
     text-align: right;
     background-color: rgba(255, 255, 255,0.8);
-    position: absolute;
-    bottom: 0;
 }
 
-.pickup .contents .text h3 {
+.flex .contents-item .text h3 {
     width: 85%;
     margin: 0 5% 1rem 10%;
+    font-size: 0.7rem;
     border-bottom: 1px solid #000;
 }
 
-.pickup .contents .text .subtitle {
+.flex .contents-item .text .subtitle {
     margin-right: 5%;
 }
 
-.arrow-next {
-    display: block;
-    margin-top: 2px; 
-    height: 2px;
-    font-size: 0.8rem;
-    background-color: #fff;
-    position: relative;
-    transform: scale(0, 1);
-    transform-origin: top left;
-    animation: arrow01 3s ease-in-out infinite forwards;
-}
-
-.arrow-next::after {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 15px;
-    border-right: 2px solid #fff;
-    transform: rotate(-45deg) scale(1, 0);
-    transform-origin: right bottom;
-    position: absolute;
-    bottom: 2px;
-    right: 1px;
-    animation: arrow02 3s ease-in-out infinite forwards;
-}
-
 .service-list {
-    padding: 1rem 1rem 2rem;
-    margin-top: 3rem;
+    padding: 100px 0 0;
     color: #000;
 }
 
@@ -165,39 +171,7 @@
     padding: 1rem;
 }
 
-/***************** shooting flow ******************/
 
-.shooting-flow {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-top: 4rem;
-}
-
-.shooting-flow img {
-    width: 100%;
-}
-
-.shooting-flow .text, 
-.price-schedule .text {
-    width: 80%;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
-
-/***************** price & schedule ******************/
-
-.price-schedule {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-top: 4rem;
-}
-
-.price-schedule img {
-    width: 80%;
-    padding: 0 10%;
-}
 
 
 /****** next-contents ******/
@@ -216,12 +190,30 @@
 
 /***************** main ******************/
 
-.contents-top .text {
-    padding: 7rem 2rem;
+.contents-top .images {
+    width: 60%;
+    height: 500px;
 }
 
-.contents-top .text p{
-    line-height: 4rem;
+.photo .contents-top .images {
+    width: 60%;
+    height: 500px;
+}
+
+.contents-top .textbox {
+    padding: 100px 2rem;
+}
+
+.photo .contents-top .textbox {
+    padding: 100px 2rem;
+}
+
+.contents-top .textbox h2 {
+    font-size: 3rem;
+    padding: 50px 0;
+}
+
+.contents-top .textbox p{
     font-size: 1.5rem;
 }
 
@@ -231,43 +223,21 @@
     padding: 7rem 0;
 }
 
-.pickup .flex {
-    display: flex;
+.flex .contents-item {
+    width: 30%;
+    margin: 0 auto;
 }
 
-.pickup .contents {
-    width: 80%;
-}
-
-.pickup .contents .images { 
-    height: 400px;
-}
-
-.pickup .contents-item {
-    width: 46%;
-    margin: 0 2%;
-}
-
-.pickup .contents-item .text {
+.flex .contents-item .text {
     margin-bottom: 1rem;
 }
-
-.pickup .contents .service-list {
-    width: 60%;
-    margin: 4rem auto 0;
+.flex .service-list {
+    max-width: 768px;
+    margin: 0 auto;
 }
-
-/*************** shooting ****************/
-
-
-.shooting-flow {
-    padding-top: 7rem;
+.service-list ul {
+    width: 40%;
+    margin: 0 auto;
 }
-
-.price-schedule {
-    padding: 7rem 0;
-}
-
-
 
 }

@@ -98,12 +98,19 @@ video {
     position: absolute;
     left: 0;
 }
-
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
 /***** fadein *****/
 .fadein {
 	opacity : 0;
 	transform: translateY(50px);
 	transition: 1s;
+}
+.fadein_up{
+    opacity: 1;
+    transform: translateY(0);
 }
 /***** fadein *****/
 
