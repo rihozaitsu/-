@@ -1,19 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SERVICE</title>
+    <!-- slick使用 -->
+    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>  
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/service.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../js/common.js"></script>
-
 </head>
 <body>
 
-    <img src="../images/logo.png" class="top_logo">
+    <a href="../index.html"><img src="../images/logo.png" class="top_logo"></a>
     <div class="btn_wrap"> 
         <img src="../images/btn.png" class="btn">
         <img src="../images/btn2.png" class="btn2">
@@ -165,32 +164,36 @@
                 </div>
 
                 <div class="service-list">
-                    <div class="title">
-                        <p>サービス一覧</p>
+                    <div class="contents-slider">
+                        <div class="title">
+                            <span class="subtitle">Corporate・Recruitment</span>
+                            <h3>企業PR・採用</h3>
+                        </div>
+                        <ul class="slide">
+                            <li class="slide-item"><img src="../images/eizou.kigyoupr.jpg"></li>
+                            <li class="slide-item"><img src="../images/eizou.kigyoupr2.jpg"></li>
+                            <li class="slide-item"><img src="../images/eizou.kigyoupr3.jpg"></li>
+                        </ul>
+                    </div>
+
+                    <div class="contents-slider">
+                        <div class="title">
+                            <span class="subtitle">Corporate・Recruitment</span>
+                            <h3>SNSショートムービー</h3>
+                        </div>
+                        <ul class="slide">
+                            <li class="slide-item"><img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg" width="720" height="460"/></li>
+                            <li class="slide-item"><img src="https://cdn.pixabay.com/photo/2017/11/14/13/06/kitty-2948404_1280.jpg" width="720" height="460"/></li>
+                            <li class="slide-item"><img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg" width="720" height="460"/></li>
+                        </ul>
                     </div>
 
                     <div class="flex">
                         <div class="contents-item">
-                            <div class="images saiyou-back"> </div>
-                    
-                            <div class="text">
-                                <span class="subtitle">Corporate・Recruitment</span>
-                                <h3>企業PR・採用</h3>    
-                            </div>
-                        </div>
-                        <div class="contents-item">
-                            <div class="images youtube-back"></div>
-                    
-                            <div class="text">
-                                <span class="subtitle">Youtube channel</span>
-                                <h3>YouTubeチャンネル</h3>
-                            </div>
-                        </div>
-                        <div class="contents-item">
                             <div class="images event-back"></div>
                     
                             <div class="text">
-                                <span class="subtitle">Youtube channel</span>
+                                <span class="subtitle">Event introduction</span>
                                 <h3>イベント紹介</h3>
                             </div>
                         </div>
@@ -198,7 +201,7 @@
                             <div class="images zoom-back"></div>
                     
                             <div class="text">
-                                <span class="subtitle">Youtube channel</span>
+                                <span class="subtitle">ZOOM operation</span>
                                 <h3>ZOOM会議オペレーション</h3>
                             </div>
                         </div>
@@ -206,7 +209,7 @@
                             <div class="images live-back"></div>
                     
                             <div class="text">
-                                <span class="subtitle">Youtube channel</span>
+                                <span class="subtitle">Video distribution</span>
                                 <h3>動画配信(ライブ配信)</h3>
                             </div>
                         </div>
@@ -215,21 +218,81 @@
                     
                             <div class="text">
                                 <span class="subtitle">Youtube channel</span>
-                                <h3>SNSショートムービー</h3>
+                                <h3>YouTubeチャンネル</h3>
                             </div>
                         </div>
                         
                     </div>
 
-                    <ul>
+                    <ul class="contents-list">
                         <li>・企業PR・採用</li>
-                        <li>・YouTubeチャンネル</li>
+                        <li>・SNSショートムービー</li>
                         <li>・イベント紹介</li>
                         <li>・ZOOM会議オペレーション</li>
                         <li>・動画配信(ライブ配信)</li>
-                        <li>・SNSショートムービー etc...</li>
+                        <li>・YouTubeチャンネルetc...</li>
                     </ul>
-                </div>            
+                </div>     
+                
+                <div class="plan">
+                    <h2>料金表<br><span class="subtitle">(個人様向け 1day プラン)</span></h2>
+                    <div class="ryoukin">
+                        <h3>ダイジェストプラン</h3>
+                        <div class="contents">
+                            <div class="panel pricing-table">
+                                <div class="pricing-plan">
+                                    <p class="time">2時間撮影/15分movie</p>
+                                    <span class="pricing-price">￥99,800</span>
+                                </div>
+                                
+                                <div class="pricing-plan">
+                                    <p class="time">1時間撮影/5分movie</p>
+                                    <span class="pricing-price">￥79,800</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ryoukin">
+                        <h3>ショートムービープラン</h3>
+                        <div class="contents">
+                            <div class="panel pricing-table">
+                                <div class="pricing-plan">
+                                    <p class="time">2時間撮影/1〜2分movie</p>
+                                    <span class="pricing-price">￥60,000</span>
+                                </div>
+                                
+                                <div class="pricing-plan">
+                                    <p class="time">1時間撮影/30秒movie</p>
+                                    <span class="pricing-price">￥40,000</span>
+                                </div>
+            
+                                <div class="pricing-plan">
+                                    <p class="time">30分撮影/15秒movie</p>
+                                    <span class="pricing-price">￥30,000</span>
+                                </div>                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="note">
+                        <ul>
+                            <li>打ち合わせ...事前にZOOMにて30分〜１時間程</li>
+                            <li>交通費...福岡市内無料</li>
+                            <li>テロップ...別途料金いただきます</li>
+                            <li>(テーマ、撮影日、雨天時、ご希望など)<br>打ち合わせは対面も可能ですのでご相談ください</li>
+                            <li>絵コンテにてイメージのご提案</li>
+                            <li>テータ便納品またはBOX納品</li>
+                            <li>福岡市外は実費＋移動時間費</li>
+                        </ul>
+                    </div>
+
+                    <div class="linelink">
+                        <a href="" class="linelink">
+                            <span>LINE＠から相談</span>
+                        </a>
+                    </div>
+
+                </div>
             </div>
             
             
@@ -250,13 +313,21 @@
                 </div>
 
                 <div class="service-list">
-                    <div class="title">
-                        <p>サービス一覧</p>
+                    <div class="contents-slider">
+                        <div class="title">
+                            <span class="subtitle">Corporate・Recruitment</span>
+                            <h3>各種イベント</h3>
+                        </div>
+                        <ul class="slide">
+                            <li class="slide-item"><img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg" width="720" height="460"/></li>
+                            <li class="slide-item"><img src="https://cdn.pixabay.com/photo/2017/11/14/13/06/kitty-2948404_1280.jpg" width="720" height="460"/></li>
+                            <li class="slide-item"><img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg" width="720" height="460"/></li>
+                        </ul>
                     </div>
 
                     <div class="flex">
                         <div class="contents-item">
-                            <div class="images saiyou-back"> </div>
+                            <div class="images cook-back"> </div>
                     
                             <div class="text">
                                 <span class="subtitle">Cooking photo</span>
@@ -264,7 +335,7 @@
                             </div>
                         </div>
                         <div class="contents-item">
-                            <div class="images youtube-back"></div>
+                            <div class="images profile-back"></div>
                     
                             <div class="text">
                                 <span class="subtitle">Profile photo</span>
@@ -272,7 +343,7 @@
                             </div>
                         </div>
                         <div class="contents-item">
-                            <div class="images event-back"></div>
+                            <div class="images homepage-back"></div>
                     
                             <div class="text">
                                 <span class="subtitle">Homepage photo</span>
@@ -280,36 +351,95 @@
                             </div>
                         </div>
                         <div class="contents-item">
-                            <div class="images zoom-back"></div>
+                            <div class="images product-back"></div>
                     
                             <div class="text">
                                 <span class="subtitle">Product shooting</span>
                                 <h3>商品撮影</h3>
                             </div>
-                        </div>
-                        <div class="contents-item">
-                            <div class="images live-back"></div>
-                    
-                            <div class="text">
-                                <span class="subtitle">Various events</span>
-                                <h3>各種イベント撮影</h3>
-                            </div>
-                        </div>
-                        
+                        </div>                        
                     </div>
 
-                    <ul>
+                    <ul class="contents-list">
+                        <li>・各種イベント撮影</li>
+                        <li>（ 成人式 結婚式 七五三 ）</li>
                         <li>・料理写真</li>
                         <li>・プロフィール写真</li>
                         <li>・ホームページ用写真</li>
                         <li>・商品撮影</li>
-                        <li>・各種イベント撮影　etc...</li>
-                        <li>（ 成人式 結婚式 七五三 ）</li>
                     </ul>
-                </div>            
+                </div>
+                
+                <div class="plan">
+                    <h2>料金表</h2>
+                    <div class="ryoukin">
+                        <h3>企業様向け　1dayプラン</h3>
+                        <div class="contents">
+                            <div class="panel pricing-table">
+                                <div class="pricing-plan">
+                                    <p class="plan-name">Large プラン</p>
+                                    <p class="time">4時間/200カット</p>
+                                    <span class="pricing-price">￥70,000</span>
+                                </div>
+                                
+                                <div class="pricing-plan">
+                                    <p class="plan-name">Medium プラン</p>
+                                    <p class="time">２時間/50カット</p>
+                                    <span class="pricing-price">￥50,000</span>
+                                </div>
+
+                                <div class="pricing-plan">
+                                    <p class="plan-name">Small プラン</p>
+                                    <p class="time">30分/10カット</p>
+                                    <span class="pricing-price">￥30,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ryoukin">
+                        <h3>個人様向け 1dayプラン</h3>
+                        <div class="contents">
+                            <div class="panel pricing-table">
+                                <div class="pricing-plan">
+                                    <p class="plan-name">Large プラン</p>
+                                    <p class="time">2時間/50カット</p>
+                                    <span class="pricing-price">￥49,800</span>
+                                </div>
+                                
+                                <div class="pricing-plan">
+                                    <p class="plan-name">Medium プラン</p>
+                                    <p class="time">30分/10カット</p>
+                                    <span class="pricing-price">￥25,000</span>
+                                </div>
+
+                                <div class="pricing-plan">
+                                    <p class="plan-name">Small プラン</p>
+                                    <p class="time">15分/１カット</p>
+                                    <span class="pricing-price">￥10,000</span>
+                                </div>                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note">
+                        <ul>
+                            <li>打ち合わせ・・・事前にZOOMにて30分〜１時間程</li>
+                            <li>交通費...福岡市内無料　福岡市外は実費＋移動時間費</li>
+                            <li>(テーマ、撮影日、雨天時、ご希望など)<br>打ち合わせは対面も可能ですのでご相談ください</li>
+                            <li>全カットレタッチ有り</li>
+                            <li>テータ便納品またはBOX納品</li>
+                            <li>福岡市外は実費＋移動時間費</li>
+                        </ul>
+                    </div>
+                    <div class="linelink">
+                        <a href="" class="linelink">
+                            <span>LINE＠から相談</span>
+                        </a>
+                    </div>
+                </div>
+
             </div><!-- contents end -->
 
-            <div class="contents fadein"><!-------- 映像制作 ------>
+            <div class="contents marketing fadein"><!-------- 映像制作 ------>
                 <h2><span class="red">Marketing</span><br><span class="h2border"></span><span class="subtitle">マーケティング</span><span class="h2border"></span></h2>
 
                 <div class="contents-top">
@@ -320,6 +450,56 @@
                     </div>
                 </div>
 
+                <div class="nagare">
+                    <h3><span class="h2border"></span>マーケティングの流れ<span class="h2border"></span></h3>
+                    <h4>目標を明確化する</h4>
+                    <div class="arrow"></div>
+                    <h4>コンテンツの活かし方を知る</h4>
+                    <div class="arrow"></div>
+                    <h4>目標に向けたコンテンツ制作</h4>
+                </div>
+
+                <div class="koe koe1">
+                    <div class="koe-item">
+                        <div class="image"></div>
+                        <div class="name">
+                            <h3>株式会社　A社様</h3>
+                        </div>
+                        <div class="text">
+                            <h4>売り上げが<br class="pc">上がりました</h4>
+                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
+                        <div class="logo sp">
+                            <img src="../images/about-concept.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="koe koe2">
+                    <div class="koe-item">
+                        <div class="image"></div>
+                        <div class="clear"></div>
+                        <div class="name">
+                            <h3>株式会社　A社様</h3>
+                        </div>
+                        <div class="text">
+                            <h4>売り上げが<br class="pc">上がりました</h4>
+                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
+                        <div class="logo sp">
+                            <img src="../images/about-concept.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <p class="">他にもたくさんの声を<br>いただいております</p>
+                    <div class="linelink">
+                        <a href="" class="linelink">
+                            <span>LINE＠から相談</span>
+                        </a>
+                    </div>
+                </div>
             </div><!-- contents end -->
             
         </section><!-- pickup end -->
@@ -340,6 +520,24 @@
 
     
     <div class="footer">
+        <div class="contact-back">
+            <section class="contact">
+                <a href="../contact">
+                <span class="subtitle">お問い合わせ</span>
+                <h4>CONTACT ME</h4>
+                <p>お見積もり依頼やご相談はこちら</p>
+                </a>
+            </section>
+        </div>
+        <div class="blog-back">
+            <section class="blog">
+                <a href="">
+                <span class="subtitle">お問い合わせ</span>
+                <h4>BLOG</h4>
+                <p>最新情報も掲載中</p>
+                </a>
+            </section>
+        </div>
         <div class="clear"></div>
 
         <section class="globalfooter">
@@ -358,12 +556,29 @@
         </section><!-- grorbalfooter end -->
         
     </div><!-- footer end -->
-
-
-
-
-    
 </div><!-- container end -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script src="../js/common.js"></script>
+
+<script>
+    $(function() {
+    $('.slide').slick({
+        infinite: true,
+        dots:true,
+        slidesToShow: 1,
+        centerMode: true, //要素を中央寄せ
+        centerPadding:'100px', //両サイドの見えている部分のサイズ
+        autoplay:true, //自動再生
+        responsive: [{
+             breakpoint: 480,
+                  settings: {
+                       centerMode: false,
+             }
+        }]
+   });
+});
+</script>
 </body>
 </html>
 

@@ -1,0 +1,35 @@
+<svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+<defs>
+<style>
+.cls-1{
+    fill:none;
+    stroke:#fff;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:19.27px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation:mozart_line 1.2s forwards;
+    }
+    @keyframes mozart_line{
+        0% {
+           stroke-dashoffset: 1000;
+        }
+        5%{
+            stroke-dashoffset: 1000;
+		}
+		90%{
+			opacity: 1;
+		}
+       95%{
+        stroke-dashoffset:150;
+       }
+       100%{
+           opacity: 0;
+           stroke-dashoffset:15z0;
+	   }
+	}
+</style>
+</defs>
+
+<polyline class="cls-1" points="99.66 175.58 400.34 98.29 316.46 401.71 192.26 280.83"/><line class="cls-1" x1="244.43" y1="323.55" x2="300.23" y2="129.82"/><line class="cls-1" x1="269.26" y1="253.26" x2="362.88" y2="226.26"/></svg>
